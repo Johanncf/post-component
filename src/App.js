@@ -18,12 +18,13 @@ function App() {
     setCurrentTime(new Date())
   }, 60000)
 
-  let years = currentTime.getFullYear() - date.getFullYear()
-  let months = currentTime.getMonth() - date.getMonth()
-  let days = currentTime.getDate() - date.getDate()
-  let minutes = currentTime.getMinutes() - date.getMinutes()
-
+  
   useEffect(() => {
+    let years = currentTime.getFullYear() - date.getFullYear()
+    let months = currentTime.getMonth() - date.getMonth()
+    let days = currentTime.getDate() - date.getDate()
+    let minutes = currentTime.getMinutes() - date.getMinutes()
+
     if (years === 0 && months === 0 && days === 0 && minutes === 0) {
       
       setDateProp('Seconds ago')
