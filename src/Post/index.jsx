@@ -27,7 +27,7 @@ export default function Post({ user, photo, date, children }) {
             </header>
             <article className="post_content">
                 <p className="post_text">{children}</p>
-                <img src={photo} alt='post-image' className="post-image" />
+                <img src={photo} alt='post' className="post-image" />
             </article>
             <div className="actions">
                 <div className="likes-comments_container">
